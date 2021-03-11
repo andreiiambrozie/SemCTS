@@ -87,8 +87,10 @@ public abstract class Aplicant{
 		boolean esteAcceptat=punctaj>=proiect.getPragDeAcceptare();
 
 		StringBuilder stringBuilder=new StringBuilder("Aplicantul ")
-				.append(" ").append(nume)
-				.append(" ").append(prenume).append(" ");
+				.append(" ")
+				.append(nume)
+				.append(" ")
+				.append(prenume).append(" ");
 
 		stringBuilder.append(esteAcceptat?"a fost acceptat ":" a fost respins");
 		System.out.println(stringBuilder.toString());
