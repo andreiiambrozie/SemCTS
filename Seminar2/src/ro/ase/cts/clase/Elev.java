@@ -24,15 +24,21 @@ public class Elev extends Aplicant{
 		return sumaFinantare;
 	}
 
+	public static float getSumaFinantare(){
+		return sumaFinantare;
+	}
+
 	public void setSumaFinantare(float sumaFinantare) {
 		Elev.sumaFinantare = sumaFinantare;
 	}
 
 	@Override
 	public String toString() {
-		return "Elev: Nume=" + nume + ", Prenume=" + prenume + ", Varsta="
-				+ varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte  + ", DenumireProiect="
-				+ Arrays.toString(denumiriProiect) + "Clasa=" + clasa + ", Tutore=" + tutore;
+		StringBuilder stringBuilder=new StringBuilder();
+		stringBuilder.append("Elev: ").append(super.toString()).append("Clasa: ").append(clasa)
+				.append("Tutore: ").append(tutore);
+
+		return stringBuilder.toString();
 	}
 	
 	public Elev() {

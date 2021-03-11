@@ -5,18 +5,20 @@ import java.util.Arrays;
 public class Angajat extends Aplicant{
 	private String ocupatie;
 	private int salariu;
-	private static int sumaFinantata=10;
+	private static int sumaFinantare=10;
 
 	public float getSumaFinantata() {
-		return sumaFinantata;
+		return sumaFinantare;
 	}
 
-	public void setSumaFinantata(int sumaFinantata) {
-		Angajat.sumaFinantata = sumaFinantata;
+	public static int getSumaFinantare() {
+		return sumaFinantare;
 	}
 
+	public static void setSumaFinantare(int sumaFinantare) {
+		Angajat.sumaFinantare = sumaFinantare;
+	}
 
-	
 	public String getOcupatie() {
 		return ocupatie;
 	}
@@ -36,16 +38,16 @@ public class Angajat extends Aplicant{
 	}
 	public Angajat() {
 		super();
-		
 	}
 	
 	
 	@Override
 	public String toString() {
-		return "Angajat: Nume=" + nume + ", Prenume=" + prenume
-				+ ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte + ", DenumireProiect="
-				+ Arrays.toString(denumiriProiect) + "Ocupatie=" + ocupatie + ", salariu=" + salariu;
-	}
-	
 
+		StringBuilder stringBuilder=new StringBuilder();
+		stringBuilder.append("Student: ").append(super.toString()).append("Salariu: ").append(salariu)
+				.append("Ocupatie: ").append(ocupatie);
+
+		return stringBuilder.toString();
+	}
 }
