@@ -21,7 +21,7 @@ public class Program {
 		System.out.println("Suma finantata pentru studenti: "+ Student.getSumaFinantare());
 		List<Aplicant> listaAplicanti;
 		try {
-			listaAplicanti = citesteAplicanti(new AngajatiReader("angajati.txt"));
+			listaAplicanti = citesteAplicanti(new AngajatiReader("elevi.txt"));
 			Proiect proiect=new Proiect(81);
 			for(Aplicant aplicant:listaAplicanti) {
 				System.out.println(aplicant.toString());
