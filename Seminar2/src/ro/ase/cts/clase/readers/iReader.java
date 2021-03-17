@@ -28,9 +28,7 @@ public abstract class iReader {
         aplicant.setPrenume(prenume);
         aplicant.setVarsta(varsta);
         aplicant.setPunctaj(punctaj);
-        aplicant.setNr_proiecte(nr);
         aplicant.setVectorDenumiri(vect,nr);
-
     }
     abstract public List<Aplicant> readAplicants() throws FileNotFoundException,NumberFormatException;
 
