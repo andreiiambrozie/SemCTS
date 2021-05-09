@@ -6,6 +6,7 @@ import ro.ase.acs.proxy.Moneda;
 import ro.ase.acs.proxy.OperatorCredite;
 import ro.ase.acs.proxy.ProxyOperatorCredite;
 
+//EXERCITIUL D7
 public class Main {
     public static void main(String[] args) {
         Persoana persoana=new Persoana("Amb","5000312440025");
