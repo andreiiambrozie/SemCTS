@@ -1,13 +1,12 @@
 package clase.facade;
 
-import clase.builder.Pacient;
+import clase.Pacient;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Salon {
     private static List<Pat> listaPaturi=new ArrayList<>();
-
     public static void adaugaPat(Pat pat){
         listaPaturi.add(pat);
     }

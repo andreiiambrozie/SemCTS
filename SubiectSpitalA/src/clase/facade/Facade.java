@@ -1,7 +1,7 @@
 package clase.facade;
 
-import clase.builder.Pacient;
-import clase.factoryMethod.Medic;
+import clase.Pacient;
+import clase.command.Medic;
 
 public class Facade {
 
