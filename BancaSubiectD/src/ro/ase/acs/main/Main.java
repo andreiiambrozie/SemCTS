@@ -15,7 +15,7 @@ public class Main {
         Cont cont2=new Cont(2,1500,"BRD","Ptm");
         Cont cont3=new Cont(3,1200,"BCR","Colentina");
 
-        //11
+        
         FlyweightFactory flyweightFactory=new FlyweightFactory();
 
         Flyweight detinator=flyweightFactory.getFlyweight("MGK");
@@ -26,7 +26,7 @@ public class Main {
         detinator1.afiseazCont(cont2);
         detinator.afiseazCont(cont3);
 
-
+        //11
         Persoana persoana=new Persoana("Amb");
         Persoana persoana1=new Persoana("Ditu");
 
